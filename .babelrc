@@ -1,0 +1,13 @@
+{
+  "presets": ["es2015", "stage-0"],
+  "plugins": [
+    "transform-runtime",
+    "transform-flow-strip-types",
+    ["module-alias", [
+      { "src": "./src/db", "expose": "db" },
+      { "src": "./src/utils", "expose": "utils" },
+      { "src": "./src/routes", "expose": "routes" },
+    ]]
+  ],
+  "sourceMaps": "both"
+}

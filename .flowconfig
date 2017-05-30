@@ -1,0 +1,15 @@
+[ignore]
+./dist/**
+./.nyc_output/**
+./coverage/**
+./vagrant
+
+[include]
+
+[libs]
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
+module.name_mapper='db'->'<PROJECT_ROOT>/src/lib/db/'
+module.name_mapper='test'->'<PROJECT_ROOT>/test/'
+module.name_mapper='lib'->'<PROJECT_ROOT>/src/lib/'
