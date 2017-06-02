@@ -6,13 +6,18 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "node -r babel-register src/index.js",
-    "test": "jest"
+    "start:bg": "node -r babel-register src/transactions.js",
+    "test": "jest",
+    "coverage": "npm test -- --coverage"
   },
   "jest": {
     "moduleDirectories": [
       "node_modules",
       "src"
-    ]
+    ],
+    "coverageDirectory": "coverage",
+    "collectCoverage": false,
+    "collectCoverageFrom": ["src/**/*.js"]
   },
   "dependencies": {
     "babel-cli": "^6.24.1",
