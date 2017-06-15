@@ -1,7 +1,5 @@
 [ignore]
 ./dist/**
-./.nyc_output/**
-./coverage/**
 ./vagrant
 
 [include]
